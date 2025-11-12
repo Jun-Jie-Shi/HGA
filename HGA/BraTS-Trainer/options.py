@@ -8,7 +8,7 @@ def args_parser():
     parser.add_argument('-patch_size', '--patch_size', default=80, type=int, help='Patch size')
     parser.add_argument('-batch_size', '--batch_size', default=2, type=int, help='Batch size')
 
-    parser.add_argument('--lr', default=2e-4, type=float, help='base learning rate')
+    parser.add_argument('--lr', default=2e-3, type=float, help='base learning rate')
     parser.add_argument('--weight_decay', default=1e-4, type=float)
     parser.add_argument('--alpha', default=0.01, type=float)
     parser.add_argument('--beta_min', default=0.1, type=float)
@@ -35,7 +35,7 @@ def args_parser():
     parser.add_argument('--imbmrpath', default='BraTS/brats_split/Brats2020_imb_split_mr1379.csv', type=str, help='csv path')
     parser.add_argument('--test_txtname', default='test.txt', type=str, help='which split to test (ralative to datapath)')
 
-    parser.add_argument('--savepath', default='outputs/eval_memory_idt_mr1379_bs2_epoch300_lr2e-3_temp4_seed1037', type=str, help='output path')
+    parser.add_argument('--savepath', default='outputs/idt_mr1379_bs2_epoch300_lr2e-3_temp4_seed1037', type=str, help='output path')
     parser.add_argument('--resume', default='/home/sjj/PASSION/code/outputs/hps_swinunetr_idt_mr1379_bs2_epoch300_lr2e-4_temp4_seed1037/model_last.pth', type=str, help='pretrained model path')
     # parser.add_argument('--resume', default=None, type=str, help='pretrained model path')
     
