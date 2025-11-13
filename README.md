@@ -5,9 +5,7 @@
 
 🏢 <sup>1</sup> Huazhong University of Science and Technology,  (<sup>:email:</sup>) corresponding author.
 </div>
-For our paper PASSION accepted by ACM MM-2024 Oral, please refer to
-
-🧐  [ArXivPreprint](https://arxiv.org/abs/2407.14796) | [OpenReview](https://openreview.net/forum?id=jttrL7wHLC) | [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3664647.3681543) 
+For our paper PASSION accepted by ACM MM-2024 Oral, please refer to  🧐  [OpenReview](https://openreview.net/forum?id=jttrL7wHLC) | [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3664647.3681543) 
 
 and this extension version HGA is used for submission.
 The extension version based on our PASSION:
