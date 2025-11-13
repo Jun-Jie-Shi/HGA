@@ -146,4 +146,20 @@ python train.py
 
 For evaluation, the `eval.py` is simply implemented, just change the corresponding checkpoint path `resume` and other path settings.
 
+## 🆚 Adding Comparision
+As our code provide various incomplete multi-modality backbones, modal-balancing methods and multi-task learning formulations, you can easily add your new method into our framework like we do, just change the `optim\your_method`, `models\your_backbone` and `train_your_method.py` by yourself, the current code version contains some redundancy. We apologize for any inconvenience this may cause.
 
+## ✨Citation
+If you find PASSION or HGA is useful in your research or applications, welcome to cite our paper and give us a star 🌟.
+```bibtex
+@inproceedings{shi2024passion,
+  title={PASSION: Towards Effective Incomplete Multi-Modal Medical Image Segmentation with Imbalanced Missing Rates},
+  author={Junjie Shi and Caozhi Shang and Zhaobin Sun and Li Yu and Xin Yang and Zengqiang Yan},
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  pages={456--465},
+  year={2024}
+}
+```
+
+## 📧Contact
+If you have any other questions, feel free to reach me at 'shijunjie@hust.edu.cn'.
