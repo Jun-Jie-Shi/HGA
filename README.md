@@ -45,7 +45,7 @@ If you want to preprocess by yourself, the preprocessing code `preprocess_brats.
 
 `Notes:` Here our default path `BRATS2020_Training_Data` may refer to `BRATS2020_Training_Data/MICCAI_BRATS2020_Training_Data` if you download in [kaggle](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation).
 
-And if you want to divide data by yourself, `data_split.py` and `generate_imb_mr.py` in the `code/preprocessing` folder is available. (Here we only provide the preprocessing for BraTS, if you want to use other datasets, just do it similarly)
+And if you want to divide data by yourself, `data_split.py` and `generate_imb_mr.py` in the `BraTS-Trainer/preprocessing` folder is available. (Here we only provide the preprocessing for BraTS, if you want to use other datasets, just do it similarly)
 
 If your folder structure (especially for datasets path) is as follows:
 ```
@@ -94,7 +94,41 @@ HGA/
 └── ...
 ```
 
-For other datasets like MyoPS2020 and MSSEG2016, you can download in [MyoPS](https://zmiclab.github.io/zxh/0/myops20/) and [MSSEG](https://portal.fli-iam.irisa.fr/msseg-challenge/english-msseg-data/), and perform preprocessing operations similar to Brats2020, all preprocess codes are provided in the corresponding XXX-Trainer, and our used imbalanced data splits are available in `datasets` folder.
+For other datasets like MyoPS2020 and MSSEG2016, you can download in [MyoPS](https://zmiclab.github.io/zxh/0/myops20/) and [MSSEG](https://portal.fli-iam.irisa.fr/msseg-challenge/english-msseg-data/), and perform preprocessing operations similar to Brats2020, all preprocess codes are provided in the corresponding `XXX-Trainer` folder, and our used imbalanced data splits are available in `datasets` folder. And after preprocessing, your folder structure is assumed to be:
+```
+HGA/
+├── datasets
+│   ├── MyoPS
+│   │   ├── train25
+│   │   ├── train25_myops_gd
+│   │   ├── MyoPS2020_Training_Data
+│   │   │   ├── ...
+│   │   ├── MyoPS2020_Training_none_npy
+│   │   │   ├── seg
+│   │   │   ├── vol
+│   │   │   ├── test.txt
+│   │   │   ├── train.txt
+│   │   ├── myops_split
+│   │   │   ├── MyoPS2020_longtail_split_mr357.csv
+│   │   │   ├── ...
+│   ├── MSSEG
+│   │   ├── Testing
+│   │   ├── Training
+│   │   ├── MSSEG2016_Training_none_npy
+│   │   │   ├── seg
+│   │   │   ├── vol
+│   │   │   ├── test.txt
+│   │   │   ├── train.txt
+│   │   │   ├── val.txt
+│   │   ├── msseg_split
+│   │   │   ├── MSSEG2016_imb_split_mr97531.csv
+├── MyoPS-Trainer
+│   ├── ...
+├── MSSEG-Trainer
+│   ├── ...
+└── ...
+```
+`Notes:` It should be noted that, to retain usable modal samples at extremely low missing rates, we used the official Testing folder for training and Training folder for testing, and change the `Training/Center01, Center07, Center08` as `Training/Center11, Center17, Center18` to avoid slice naming conflicts.
 
 ## 🔧Options Setting
 Before start training, you should check the options in `XXXXX-Trainer/options.py`,  especially for datasets path. Our code-notes may help you.
