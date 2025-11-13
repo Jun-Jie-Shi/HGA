@@ -5,12 +5,14 @@
 
 🏢 <sup>1</sup> Huazhong University of Science and Technology,  (<sup>:email:</sup>) corresponding author.
 </div>
-For our paper PASSION accepted by ACM MM-2024 Oral, please refer to  🧐  [OpenReview](https://openreview.net/forum?id=jttrL7wHLC) | [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3664647.3681543) 
+
+For our paper PASSION accepted by ACM MM-2024 Oral, please refer to  [OpenReview](https://openreview.net/forum?id=jttrL7wHLC) or [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3664647.3681543) 
 
 and this extension version HGA is used for submission.
 The extension version based on our PASSION:
 1. provide both 2D and 3D training code for MyoPS, MSSEG and BraTS datasets;
 2. rethink the uni-modal and multi-modal combination wise co-learning problem; 
 3. combine conflict-free meta learning with our preference-aware self-distillation;
-4. work well with various backbones as well as modal-balancing methods;
+4. compare against various Multi-Task Learning methods deployed in IDT setting;
+5. work well with various backbones as well as modal-balancing methods;
 
