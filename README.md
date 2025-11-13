@@ -70,9 +70,9 @@ HGA/
 ```
 you can simply conduct the preprocessing as following:
 ``` python
-python code/preprocessing/preprocess_brats.py
-python code/preprocessing/data_split.py
-python code/preprocessing/generate_imb_mr.py
+python BraTS-Trainer/preprocessing/preprocess_brats.py
+python BraTS-Trainer/preprocessing/data_split.py
+python BraTS-Trainer/preprocessing/generate_imb_mr.py
 ```
 After preprocessing, your folder structure is assumed to be:
 ```
