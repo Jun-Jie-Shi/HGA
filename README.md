@@ -94,8 +94,10 @@ HGA/
 └── ...
 ```
 
+For other datasets like MyoPS2020 and MSSEG2016, you can download in [MyoPS](https://zmiclab.github.io/zxh/0/myops20/) and [MSSEG](https://portal.fli-iam.irisa.fr/msseg-challenge/english-msseg-data/), and perform preprocessing operations similar to Brats2020, all preprocess codes are provided in the corresponding XXX-Trainer, and our used imbalanced data splits are available in `datasets` folder.
+
 ## 🔧Options Setting
-Before start training, you should check the options in `BraTS-Trainer/options.py`,  especially for datasets path. Our code-notes may help you.
+Before start training, you should check the options in `XXXXX-Trainer/options.py`,  especially for datasets path. Our code-notes may help you.
 
 Our default relative datapath is according to our folder structure, if your datapath is different, just change `datarootPath` and `datasetPath` as your absolute data-saving root-path and dataset-saving path. 
 
@@ -104,7 +106,7 @@ Other path setting like `imbmrpath` and `savepath` is also noteworthy.
 ## 🚀Running
 You can conduct the experiment as following if everything is ready.
 ```
-cd ./BraTS-Trainer
+cd ./XXXXX-Trainer
 python train.py
 ```
 
