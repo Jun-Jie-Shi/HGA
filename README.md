@@ -128,7 +128,7 @@ HGA/
 │   ├── ...
 └── ...
 ```
-`Notes:` It should be noted that, to retain usable modal samples at extremely low missing rates, we used the official Testing folder for training and Training folder for testing, and change the `Training/Center01, Center07, Center08` as `Training/Center11, Center17, Center18` to avoid slice naming conflicts.
+`Notes:` It should be noted that, to retain usable modal samples at extremely low missing rates, we swapped the official training and test set divisions, meaning that we used the official Testing folder for training and Training folder for testing, and change the `Training/Center01, Center07, Center08` as `Training/Center11, Center17, Center18` to avoid slice naming conflicts.
 
 ## 🔧Options Setting
 Before start training, you should check the options in `XXXXX-Trainer/options.py`,  especially for datasets path. Our code-notes may help you.
