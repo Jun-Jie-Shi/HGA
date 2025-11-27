@@ -7,7 +7,7 @@
 </div>
 
 For our paper PASSION accepted by ACM MM-2024 Oral, please refer to  [OpenReview](https://openreview.net/forum?id=jttrL7wHLC) or [ACM Digital Library](https://dl.acm.org/doi/abs/10.1145/3664647.3681543) and this extension version HGA is used for submission.
-The extension version HGA based on PASSION:
+The extension version HGA is based on PASSION:
 1. provide both 2D and 3D training code for MyoPS, MSSEG and BraTS datasets;
 2. rethink the uni-modal and multi-modal combination wise co-learning problem; 
 3. combine conflict-free meta learning with our preference-aware self-distillation;
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ### Directly download preprocessed dataset
 You can download the preprocessed dataset (e.g. BraTS2020) from [RFNet](https://drive.google.com/drive/folders/1AwLwGgEBQwesIDTlWpubbwqxxd8brt5A?usp=sharing) and unzip them in the `datasets/BraTS` folder.
 ```bash
-  tar -xzf BRATS2020_Training_none_npy.tar.gz
+tar -xzf BRATS2020_Training_none_npy.tar.gz
 ```
 The data-split is available in the `datasets/BraTS/BRATS2020_Training_none_npy` folder, and our imbalanced missing rates data-split is available in the `datasets/BraTS/brats_split` folder.
 
@@ -147,7 +147,7 @@ python train.py
 For evaluation, the `eval.py` is simply implemented, just change the corresponding checkpoint path `resume` and other path settings.
 
 ## 🆚 Adding Comparision
-As our code provide various incomplete multi-modality backbones, modal-balancing methods and multi-task learning formulations, you can easily add your new method into our framework like we do, just change the `optim\your_method`, `models\your_backbone` and `train_your_method.py` by yourself, the current code version contains some redundancy. We apologize for any inconvenience this may cause.
+As our code provide various incomplete multi-modality backbones, modal-balancing methods and multi-task learning formulations, you can easily add your new method into our framework like we do, just change the `optim/your_method`, `models/your_backbone` and `train_your_method.py` by yourself, the current code version contains some redundancy. We apologize for any inconvenience this may cause.
 
 ## ✨Citation
 If you find PASSION or HGA is useful in your research or applications, welcome to cite our paper and give us a star 🌟.
