@@ -14,6 +14,24 @@ The extension version HGA is based on PASSION:
 4. compare against various Multi-Task Learning methods deployed in IDT setting;
 5. work well with various backbones as well as modal-balancing methods;
 
+## 👇Overview
+<details>
+  
+### • Abstract
+Despite the promising potential of multi-modal learning in medical image segmentation, real-world applications often encounter modal incompleteness sourced from diverse domains and institutions, sparking significant discussions on incomplete multi-modal learning. Existing approaches either train a unified model for all or develop individual models for specific multi-modal combinations to ensure model fairness and robustness during inference. However, the assumption of complete multi-modal data for training is unrealistic and infeasible in clinical practice. In this paper, we thoroughly formulate such a challenging setting and propose hierarchical gradient alignment
+(HGA) to address uni- and multi-modal imbalance. Specifically, gradient direction is aligned through sequential meta learning for multi-modal combinations and multi-level self-distillation for uni-modals within each combination. Gradient magnitude is aligned based on relative preference estimation to balance the dominance of each modal during training. Extensive experiments on five public benchmarks (BraTS2018, BraTS2020, BraTS2023, MyoPS2020, and MSSEG2016) demonstrate that HGA consistently outperforms state-of-the-art incomplete and imbalanced multi-modal learning methods, as well as representative multitask learning optimization techniques. More importantly, HGA is validated to work as plug-and-play modules for consistent performance improvement across different backbones.
+
+<div align="center">
+<img src="assets/settings.png" />
+</div>
+
+### • Framework
+<div align="center">
+<img src="assets/overview.png" />
+</div>
+
+</details>
+
 ## 📋️Requirements
 We recommend using conda to setup the environment. See the `requirements.txt` for environment configuration.
 
