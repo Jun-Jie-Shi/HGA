@@ -45,7 +45,7 @@ If you want to preprocess by yourself, the preprocessing code `preprocess_brats.
 
 `Notes:` Here our default path `BRATS2020_Training_Data` may refer to `BRATS2020_Training_Data/MICCAI_BRATS2020_Training_Data` if you download in [kaggle](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation).
 
-And if you want to divide data by yourself, `data_split.py` and `generate_imb_mr.py` in the `BraTS-Trainer/preprocessing` folder is available. (Here we only provide the preprocessing for BraTS, if you want to use other datasets, just do it similarly)
+And if you want to divide data by yourself, `data_split.py` and `generate_imb_mr.py` in the `BraTS-Trainer/preprocessing` folder is available. (if you want to use other datasets, just do it similarly)
 
 If your folder structure (especially for datasets path) is as follows:
 ```
