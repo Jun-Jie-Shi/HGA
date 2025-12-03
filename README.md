@@ -15,7 +15,7 @@ The extension version HGA is based on PASSION:
 5. work well with various backbones as well as modal-balancing methods;
 
 ## 👇Overview
-<details>
+<details open>
   
 ### • Abstract
 Despite the promising potential of multi-modal learning in medical image segmentation, real-world applications often encounter modal incompleteness sourced from diverse domains and institutions, sparking significant discussions on incomplete multi-modal learning. Existing approaches either train a unified model for all or develop individual models for specific multi-modal combinations to ensure model fairness and robustness during inference. However, the assumption of complete multi-modal data for training is unrealistic and infeasible in clinical practice. In this paper, we thoroughly formulate such a challenging setting and propose hierarchical gradient alignment
